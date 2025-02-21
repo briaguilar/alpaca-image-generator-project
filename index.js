@@ -227,7 +227,7 @@ function handleEars() {
             if (
                 ele.target.value == "default" ||
                 ele.target.value == "tilt-backward" ||
-                ele.target.value == "tilt-forward" ||
+                ele.target.value == "tilt-forward"
              ) {
                 imgSrc.src = `/alpaca/ears/${ele.target.value}.png`;
             }
