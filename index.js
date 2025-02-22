@@ -15,85 +15,90 @@ let types = document.getElementById("types");
 letTempHair = "default";
 
 let partsBtn = [
-    { class: "buttons", value: "hair", content: "Hair" },
-    { class: "buttons", value: "ears", content: "Ears" },
-    { class: "buttons", value: "mouth", content: "Mouth" },
-    { class: "buttons", value: "neck", content: "Neck" },
-    { class: "buttons", value: "leg", content: "Leg" },
-    { class: "buttons", value: "eyes", content: "Eyes" },
-    { class: "buttons", value: "acce", content: "Accessories" },
-    { class: "buttons", value: "background", content: "Background" }
+    { class: "btn", value: "hair", content: "Hair" },
+    { class: "btn", value: "ears", content: "Ears" },
+    { class: "btn", value: "mouth", content: "Mouth" },
+    { class: "btn", value: "neck", content: "Neck" },
+    { class: "btn", value: "leg", content: "Leg" },
+    { class: "btn", value: "eyes", content: "Eyes" },
+    { class: "btn", value: "acce", content: "Accessories" },
+    { class: "btn", value: "background", content: "Background" }
 ];
 
-let earsBtn = [
-    { class: "buttons", value: "default", content: "Default" },
-    { class: "buttons", value: "tilt-backward", content: "Backward" },
-    { class: "buttons", value: "tilt-forward", content: "Forward" }
+let earBtn = [
+    { class: "btn", value: "default", content: "Default" },
+    { class: "btn", value: "tilt-backward", content: "Backward" },
+    { class: "btn", value: "tilt-forward", content: "Forward" }
 ];
 
 let hairBtn = [
-    { class: "buttons", value: "default", content: "Default" },
-    { class: "buttons", value: "bang", content: "Bang" },
-    { class: "buttons", value: "curls", content: "Curls" },
-    { class: "buttons", value: "elegant", content: "Elegant" },
-    { class: "buttons", value: "fancy", content: "Fancy" },
-    { class: "buttons", value: "quiff", content: "Quiff" },
-    { class: "buttons", value: "short", content: "Short" }
+    { class: "btn", value: "default", content: "Default" },
+    { class: "btn", value: "bang", content: "Bang" },
+    { class: "btn", value: "curls", content: "Curls" },
+    { class: "btn", value: "elegant", content: "Elegant" },
+    { class: "btn", value: "fancy", content: "Fancy" },
+    { class: "btn", value: "short", content: "Short" }
 ];
 
 let acceBtn = [
-    { class: "buttons", value: "earings", content: "Earings" },
-    { class: "buttons", value: "flower", content: "Flower" },
-    { class: "buttons", value: "glasses", content: "Glasses" },
-    { class: "buttons", value: "headphone", content: "Headphone" }
+    { class: "btn", value: "earings", content: "Earings" },
+    { class: "btn", value: "flower", content: "Flower" },
+    { class: "btn", value: "glasses", content: "Glasses" },
+    { class: "btn", value: "headphone", content: "Headphone" }
 ];
 
 let eyesBtn = [
-    { class: "buttons", value: "default", content: "Default" },
-    { class: "buttons", value: "angry", content: "Angry" },
-    { class: "buttons", value: "naughty", content: "Naughty" },
-    { class: "buttons", value: "panda", content: "Panda" },
-    { class: "buttons", value: "smart", content: "Smart" },
-    { class: "buttons", value: "star", content: "Star" }
+    { class: "btn", value: "default", content: "Default" },
+    { class: "btn", value: "angry", content: "Angry" },
+    { class: "btn", value: "naughty", content: "Naughty" },
+    { class: "btn", value: "panda", content: "Panda" },
+    { class: "btn", value: "smart", content: "Smart" },
+    { class: "btn", value: "star", content: "Star" }
 ];
 
 let backgroundBtn = [
-    { class: "buttons", value: "default", content: "Default" },
-    { class: "buttons", value: "blue50", content: "Blue 50" },
-    { class: "buttons", value: "blu60", content: "Blue 60" },
-    { class: "buttons", value: "blue70", content: "Blue 70" },
-    { class: "buttons", value: "darkblue30", content: "Dark Blue 30" },
-    { class: "buttons", value: "darkblue50", content: "Dark Blue 50" },
-    { class: "buttons", value: "darkblue70", content: "Dark Blue 70" },
-    { class: "buttons", value: "green50", content: "Green 50" },
-    { class: "buttons", value: "green60", content: "Green 60" },
-    { class: "buttons", value: "green70", content: "Green 70" },
-    { class: "buttons", value: "grey40", content: "Grey 40" },
-    { class: "buttons", value: "grey70", content: "Grey 70" },
-    { class: "buttons", value: "grey80", content: "Grey 80" },
-    { class: "buttons", value: "red50", content: "Red 50" },
-    { class: "buttons", value: "red60", content: "Red 60" },
-    { class: "buttons", value: "red70", content: "Red 70" },
-    { class: "buttons", value: "yellow50", content: "Yellow 50" },
-    { class: "buttons", value: "yellow60", content: "Yellow 60" },
-    { class: "buttons", value: "yellow70", content: "Yellow 70" }
+    { class: "btn", value: "blue50", content: "Blue 50" },
+    { class: "btn", value: "blue60", content: "Blue 60" },
+    { class: "btn", value: "blue70", content: "Blue 70" },
+    { class: "btn", value: "darkblue30", content: "Dark Blue 30" },
+    { class: "btn", value: "darkblue50", content: "Dark Blue 50" },
+    { class: "btn", value: "darkblue70", content: "Dark Blue 70" },
+    { class: "btn", value: "green50", content: "Green 50" },
+    { class: "btn", value: "green60", content: "Green 60" },
+    { class: "btn", value: "green70", content: "Green 70" },
+    { class: "btn", value: "grey40", content: "Grey 40" },
+    { class: "btn", value: "grey70", content: "Grey 70" },
+    { class: "btn", value: "grey80", content: "Grey 80" },
+    { class: "btn", value: "red50", content: "Red 50" },
+    { class: "btn", value: "red60", content: "Red 60" },
+    { class: "btn", value: "red70", content: "Red 70" },
+    { class: "btn", value: "yellow50", content: "Yellow 50" },
+    { class: "btn", value: "yellow60", content: "Yellow 60" },
+    { class: "btn", value: "yellow70", content: "Yellow 70" }
 ];
 
 let legBtn = [
-    { class: "buttons", value: "default", content: "Default" },
-    { class: "buttons", value: "bubble-tea", content: "Bubble Tea" },
-    { class: "buttons", value: "cookie", content: "Cookie" },
-    { class: "buttons", value: "game-console", content: "Game Console" },
-    { class: "buttons", value: "tilt-backward", content: "Backward" },
-    { class: "buttons", value: "tilt-forward", content: "Forward" }
+    { class: "btn", value: "default", content: "Default" },
+    { class: "btn", value: "bubble-tea", content: "Bubble Tea" },
+    { class: "btn", value: "cookie", content: "Cookie" },
+    { class: "btn", value: "game-console", content: "Game Console" },
+    { class: "btn", value: "tilt-backward", content: "Backward" },
+    { class: "btn", value: "tilt-forward", content: "Forward" }
+];
+
+let neckBtn = [
+    { class: "btn", value: "bend-backward", content: "Backward" },
+    { class: "btn", value: "default", content: "Default" },
+    { class: "btn", value: "thick", content: "Thick" },
+    { class: "btn", value: "bend-forward", content: "Forward" }
 ];
 
 let mouthBtn = [
-    { class: "buttons", value: "default", content: "Default" },
-    { class: "buttons", value: "astonished", content: "Astonished" },
-    { class: "buttons", value: "eating", content: "Eating" },
-    { class: "buttons", value: "laugh", content: "Laugh" },
-    { class: "buttons", value: "tongue", content: "Tongue" }
+    { class: "btn", value: "default", content: "Default" },
+    { class: "btn", value: "astonished", content: "Astonished" },
+    { class: "btn", value: "eating", content: "Eating" },
+    { class: "btn", value: "laugh", content: "Laugh" },
+    { class: "btn", value: "tongue", content: "Tongue" }
 ];
 
 const bgCheck = [
@@ -128,7 +133,7 @@ function handleHair() {
         types.appendChild(node);
     });
 
-    let BtnArray = document.getElementsByClassName("buttons");
+    let BtnArray = document.getElementsByClassName("btn");
 
     const imgSrc = document.getElementById("hair");
 
@@ -138,11 +143,12 @@ function handleHair() {
                 ele.target.value == "bang" ||
                 ele.target.value == "curls" ||
                 ele.target.value == "default" ||
+                ele.target.value == "fancy" ||
                 ele.target.value == "elegant" ||
-                ele.target.value == "quiff" ||
                 ele.target.value == "short"
-            )
-            imgSrc.src = `/alpaca/hair/${ele.target.value}.png`;
+            ) {
+                imgSrc.src = `alpaca/hair/${ele.target.value}.png`;
+            }
         });
     });
 }
@@ -153,11 +159,12 @@ function handleAcce() {
         console.log(e);
         const node = document.createElement("button");
         node.classList.add(e.class);
+        node.value = e.value;
         node.innerText = e.content;
         types.appendChild(node);
     });
 
-    let BtnArray = document.getElementsByClassName("buttons");
+    let BtnArray = document.getElementsByClassName("btn");
 
     const imgSrc = document.getElementById("acce");
 
@@ -168,8 +175,10 @@ function handleAcce() {
                 ele.target.value == "flower" ||
                 ele.target.value == "glasses" ||
                 ele.target.value == "headphone"
-            )
-            imgSrc.src = `/alpaca/accessories/${ele.target.value}.png`;
+            ) {
+                imgSrc.src = `alpaca/accessories/${ele.target.value}.png`;
+                console.log("The image name is: " + ele.target.value);
+            }
         });
     });
 }
@@ -185,7 +194,7 @@ function handleBackground() {
         types.appendChild(node);
     });
 
-    let BtnArray = document.getElementsByClassName("buttons");
+    let BtnArray = document.getElementsByClassName("btn");
 
     const imgSrc = document.getElementById("background");
 
@@ -199,15 +208,15 @@ function handleBackground() {
             });
 
             if (cnt >= 1) {
-                imgSrc.src = `/alpaca/backgrounds/${ele.target.value}.png`;
+                imgSrc.src = `alpaca/backgrounds/${ele.target.value}.png`;
             }
         });
     });
 }
 
-// Ears function
+// Ear function
 function handleEars() {
-    earsBtn.forEach((e) => {
+    earBtn.forEach((e) => {
         console.log(e);
         const node = document.createElement("button");
         node.classList.add(e.class);
@@ -216,7 +225,7 @@ function handleEars() {
         types.appendChild(node);
     });
 
-    let BtnArray = document.getElementsByClassName("buttons");
+    let BtnArray = document.getElementsByClassName("btn");
 
     const imgSrc = document.getElementById("ears");
 
@@ -229,7 +238,7 @@ function handleEars() {
                 ele.target.value == "tilt-backward" ||
                 ele.target.value == "tilt-forward"
              ) {
-                imgSrc.src = `/alpaca/ears/${ele.target.value}.png`;
+                imgSrc.src = `alpaca/ears/${ele.target.value}.png`;
             }
         });
     });
@@ -246,7 +255,7 @@ function handleEyes() {
         types.appendChild(node);
     });
 
-    let BtnArray = document.getElementsByClassName("buttons");
+    let BtnArray = document.getElementsByClassName("btn");
 
     const imgSrc = document.getElementById("eyes");
 
@@ -262,7 +271,7 @@ function handleEyes() {
                 ele.target.value == "smart" ||
                 ele.target.value == "star"
             ) {
-                imgSrc.src = `/alpaca/eyes/${ele.target.value}.png`;
+                imgSrc.src = `alpaca/eyes/${ele.target.value}.png`;
             }
         });
     });
@@ -279,7 +288,7 @@ function handleLeg() {
         types.appendChild(node);
     });
 
-    let BtnArray = document.getElementsByClassName("buttons");
+    let BtnArray = document.getElementsByClassName("btn");
 
     const imgSrc = document.getElementById("leg");
 
@@ -288,13 +297,14 @@ function handleLeg() {
             let cnt = 0;
 
             if (
-                ele.target.value == "bubble-tea" ||
                 ele.target.value == "default" ||
+                ele.target.value == "bubble-tea" ||
+                ele.target.value == "cookie" ||
                 ele.target.value == "game-console" ||
                 ele.target.value == "tilt-backward" ||
                 ele.target.value == "tilt-forward"
             ) {
-                imgSrc.src = `/alpaca/leg/${ele.target.value}.png`;
+                imgSrc.src = `alpaca/leg/${ele.target.value}.png`;
             }
         });
     });
@@ -311,7 +321,7 @@ function handleNeck () {
         types.appendChild(node);
     });
 
-    let BtnArray = document.getElementsByClassName("buttons");
+    let BtnArray = document.getElementsByClassName("btn");
 
     const imgSrc = document.getElementById("neck");
 
@@ -320,12 +330,12 @@ function handleNeck () {
             let cnt = 0;
 
             if (
-                ele.target.value == "bend-forward" ||
                 ele.target.value == "default" ||
+                ele.target.value == "bend-forward" ||
                 ele.target.value == "thick" ||
                 ele.target.value == "bend-backward"
             ) {
-                imgSrc.src = `/alpaca/neck/${ele.target.value}.png`;
+                imgSrc.src = `alpaca/neck/${ele.target.value}.png`;
             }
         });
     });
@@ -342,7 +352,7 @@ function handleMouth() {
         types.appendChild(node);
     });
 
-    let BtnArray = document.getElementsByClassName("buttons");
+    let BtnArray = document.getElementsByClassName("btn");
 
     const imgSrc = document.getElementById("mouth");
 
@@ -357,7 +367,7 @@ function handleMouth() {
                 ele.target.value == "laugh" ||
                 ele.target.value == "tongue"
             ) {
-                imgSrc.src = `/alpaca/mouth/${ele.target.value}.png`;
+                imgSrc.src = `alpaca/mouth/${ele.target.value}.png`;
             }
         });
     });
@@ -369,28 +379,28 @@ function handleAction(e) {
 
     if (actionToTakePlace == "random") {
         const hairNumber = Math.floor(Math.random() * hairBtn.length-1);
-        hair.src = `/alpaca/hair/${hairBtn[hairNumber].value}.png`;
+        hair.src = `alpaca/hair/${hairBtn[hairNumber].value}.png`;
 
         const acceNumber = Math.floor(Math.random() * acceBtn.length-1);
-        hair.src = `/alpaca/accessories/${acceBtn[acceNumber].value}.png`;
+        acce.src = `alpaca/accessories/${acceBtn[acceNumber].value}.png`;
 
         const backgroundNumber = Math.floor(Math.random() * backgroundBtn.length-1);
-        hair.src = `/alpaca/backgrounds/${backgroundBtn[backgroundNumber].value}.png`;
+        background.src = `alpaca/backgrounds/${backgroundBtn[backgroundNumber].value}.png`;
 
-        const earsNumber = Math.floor(Math.random() * earsBtn.length-1);
-        ears.src = `/alpaca/eyes/${earsBtn[eyesNumber].value}.png`;
+        const earsNumber = Math.floor(Math.random() * earBtn.length-1);
+        ears.src = `alpaca/ears/${earBtn[earsNumber].value}.png`;
 
         const eyesNumber = Math.floor(Math.random() * eyesBtn.length-1);
-        eyes.src = `/alpaca/eyes/${eyesBtn[eyesNumber].value}.png`;
+        eyes.src = `alpaca/eyes/${eyesBtn[eyesNumber].value}.png`;
 
         const legNumber = Math.floor(Math.random() * legBtn.length-1);
-        leg.src = `/alpaca/leg/${legBtn[legNumber].value}.png`;
+        leg.src = `alpaca/leg/${legBtn[legNumber].value}.png`;
 
         const mouthNumber = Math.floor(Math.random() * mouthBtn.length-1);
-        mouth.src = `/alpaca/mouth/${mouthBtn[mouthNumber].value}.png`;
+        mouth.src = `alpaca/mouth/${mouthBtn[mouthNumber].value}.png`;
 
         const neckNumber = Math.floor(Math.random() * neckBtn.length-1);
-        neck.src = `/alpaca/neck/${neckBtn[neckNumber].value}.png`;
+        neck.src = `alpaca/neck/${neckBtn[neckNumber].value}.png`;
     } else if (actionToTakePlace == "download") {
         const element = document.getElementById("imageContainer");
 
@@ -414,7 +424,7 @@ partsBtn.forEach((e) => {
     parts.appendChild(node);
 });
 
-const buttons = document.getElementsByClassName("buttons");
+const buttons = document.getElementsByClassName("btn");
 
 const actionBtn = document.getElementsByClassName("action-btn");
 
@@ -449,6 +459,7 @@ Array.from(buttons).forEach((btn) => {
             types.innerHTML = "";
             handleNeck();
         } else if (btnValue == "mouth") {
+            types.innerHTML = "";
             handleMouth();
         }
     });

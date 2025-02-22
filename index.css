@@ -3,7 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", serif;
+}
+
+h1 {
+    font-family: "Oswald", serif;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+button {
+    font-family: "Oswald", serif;
+    font-weight: 300;
 }
 
 .container {
@@ -34,28 +44,37 @@
 }
 
 .heading {
+    font-family: "Oswald", serif;
     position: absolute;
-    top: 8%;
+    top: 3%;
     left: 10%;
+    font-weight: 500;
+    font-size: 40px;
 }
 
-.buttons {
+.btns {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    cursor: pointer;
 }
 
 .action-btn {
-    margin: 3% 10%;
-    background-color: white;
+    margin: 3% 5%;
+    background: transparent;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 40px;
+    cursor: pointer;
+    color: #23509C;
+    font-size: 18px;
     border: none;
-    padding: 2%;
-    border-radius: 5px;
-    height: 50px;
 }
 
-.ears, .hair, .neck, .nose, .eyes, .mouth, .leg, .acee {
+.ears, .hair, .neck, .nose, .eyes, .mouth, .leg, .acce {
     display: flex;
     position: absolute;
     top: 100%;
@@ -121,21 +140,25 @@
     margin-bottom: 20px;
 }
 
-.buttons {
+.btn {
     width: fit-content;
     display: flex;
-    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1.1%;
+    padding-bottom: 1.1%;
     border: 1px solid #23509C;
     background: transparent;
-    border-radius: 15px;
+    border-radius: 55px;
     color: #23509C;
     font-weight: medium;
     font-size: larger;
-    transition: ease-out 0.4s;
+    transition: ease-out 0.7s;
     margin: 5px;
+    cursor: pointer;
 }
 
-.buttons:hover, .buttons:focus {
+.btn:hover, .btn:focus {
     background-color: #23509C;
     color: #EEECEE;
 }
